@@ -55,3 +55,8 @@ docs/_build/
 
 # PyBuilder
 target/
+
+myvenv/
+mysite/db.sqlite3
+mysite/manage.py
+.gitignore

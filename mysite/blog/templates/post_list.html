@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Maureen's Blog</title>
+  <style type="text/css">
+    #main {
+      padding : 15px 30%;
+      height : 100%;
+    }
+    #navigation {
+      background-color : #920104;
+    }
+    h1 a {
+      color : #931217;
+      font-family : Lobster;
+    }
+  </style>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+  <link href="//fonts.useso.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <div id="navigation">
+    <img src="https://djangogirls.org/static/img/global/logo.png" alt="">
+  </div>
+  <div id="main">
+    {% for post in post_list %}
+
+    <div>
+      <h1><a href="">{{ post.title }}</a> </h1>
+      <p>{{ post.author }}</p>
+      <p>{{ post.test }}</p>
+      <p>{{ post.published_date }}</p>
+    </div>
+    <hr>
+    
+    {% endfor %}
+  </div>
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</body>
+</html>
